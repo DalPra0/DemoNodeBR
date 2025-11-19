@@ -1,21 +1,32 @@
-//
-//  ContentView.swift
-//  DemoNodeBR
-//
-//  Created by Lucas Dal Pra Brascher on 18/11/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = LibraryListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(viewModel.libraries) { library in
+                NavigationLink(destination: LibraryDemoView(library: library)) {
+                    HStack(spacing: 16) {
+                        Image(systemName: library.icon)
+                            .font(.title2)
+                            .foregroundStyle(.blue)
+                            .frame(width: 40)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(library.rawValue)
+                                .font(.headline)
+                            Text(library.description)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                    .padding(.vertical, 8)
+                }
+            }
+            .navigationTitle("JavaScript além do Node.js")
+            .navigationBarTitleDisplayMode(.large)
         }
-        .padding()
     }
 }
 
