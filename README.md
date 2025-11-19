@@ -1,4 +1,4 @@
-# 🚀 DemoNodeBR - JavaScript além do Node.js
+# DemoNodeBR - JavaScript além do Node.js
 
 App demo para palestra mostrando a integração de bibliotecas JavaScript em aplicações Swift nativas usando WebKit.
 
