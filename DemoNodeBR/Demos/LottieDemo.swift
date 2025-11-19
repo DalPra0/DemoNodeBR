@@ -76,7 +76,7 @@ struct LottieDemo {
                 });
                 
                 animation.addEventListener('DOMLoaded', function() {
-                    document.getElementById('status').textContent = 'Pronto! Use os botões do Swift';
+                    document.getElementById('status').textContent = 'Pronto! Use os botoes do Swift';
                 });
             } catch(error) {
                 document.getElementById('status').textContent = 'Erro ao carregar';

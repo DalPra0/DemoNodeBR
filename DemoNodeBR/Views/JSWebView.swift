@@ -50,7 +50,7 @@ struct JSWebView: UIViewRepresentable {
         
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             if message.name == "swiftHandler", let body = message.body as? String {
-                print("📱 JavaScript → Swift: \\(body)")
+                print("JavaScript -> Swift: \(body)")
             }
         }
     }

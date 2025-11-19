@@ -258,17 +258,17 @@ struct ParticlesDemo {
                 if (style === 'snow') {
                     changeStyle('snow');
                     if (window.webkit && window.webkit.messageHandlers.swiftHandler) {
-                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Snow ativado! ❄️');
+                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Snow ativado!');
                     }
                 } else if (style === 'stars') {
                     changeStyle('stars');
                     if (window.webkit && window.webkit.messageHandlers.swiftHandler) {
-                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Stars ativado! 🌟');
+                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Stars ativado!');
                     }
                 } else if (style === 'bubbles') {
                     changeStyle('bubbles');
                     if (window.webkit && window.webkit.messageHandlers.swiftHandler) {
-                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Bubbles ativado! 🔴');
+                        window.webkit.messageHandlers.swiftHandler.postMessage('Estilo Bubbles ativado!');
                     }
                 }
             }

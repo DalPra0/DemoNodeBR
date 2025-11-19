@@ -40,18 +40,18 @@ struct LibraryDemoView: View {
             switch library {
             case .chartjs:
                 HStack(spacing: 10) {
-                    Button("📊 Atualizar Dados") {
+                    Button("Atualizar Dados") {
                         swiftMessage = "updateData"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.purple)
                     
-                    Button("📈 Linha") {
+                    Button("Linha") {
                         swiftMessage = "changeType:line"
                     }
                     .buttonStyle(.bordered)
                     
-                    Button("📊 Barra") {
+                    Button("Barra") {
                         swiftMessage = "changeType:bar"
                     }
                     .buttonStyle(.bordered)
@@ -59,13 +59,13 @@ struct LibraryDemoView: View {
                 
             case .tensorflow:
                 HStack(spacing: 10) {
-                    Button("🧠 Treinar Regressão") {
+                    Button("Treinar Regressão") {
                         swiftMessage = "trainRegression"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.pink)
                     
-                    Button("🔢 Operações Tensor") {
+                    Button("Operações Tensor") {
                         swiftMessage = "runTensorOps"
                     }
                     .buttonStyle(.bordered)
@@ -82,7 +82,7 @@ struct LibraryDemoView: View {
                             .tint(.orange)
                         }
                     }
-                    Button("🎵 Tocar Sequência") {
+                    Button("Tocar Sequência") {
                         swiftMessage = "playSequence"
                     }
                     .buttonStyle(.bordered)
@@ -90,18 +90,18 @@ struct LibraryDemoView: View {
                 
             case .d3:
                 HStack(spacing: 10) {
-                    Button("➕ Adicionar Nó") {
+                    Button("Adicionar Nó") {
                         swiftMessage = "addNode"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
                     
-                    Button("🔗 Conectar Aleatório") {
+                    Button("Conectar Aleatório") {
                         swiftMessage = "addRandomLink"
                     }
                     .buttonStyle(.bordered)
                     
-                    Button("🔄 Reset") {
+                    Button("Reset") {
                         swiftMessage = "reset"
                     }
                     .buttonStyle(.bordered)
@@ -109,18 +109,18 @@ struct LibraryDemoView: View {
                 
             case .particles:
                 HStack(spacing: 10) {
-                    Button("❄️ Snow") {
+                    Button("Snow") {
                         swiftMessage = "changeStyle:snow"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.cyan)
                     
-                    Button("🌟 Stars") {
+                    Button("Stars") {
                         swiftMessage = "changeStyle:stars"
                     }
                     .buttonStyle(.bordered)
                     
-                    Button("🔴 Bubbles") {
+                    Button("Bubbles") {
                         swiftMessage = "changeStyle:bubbles"
                     }
                     .buttonStyle(.bordered)
@@ -128,23 +128,23 @@ struct LibraryDemoView: View {
                 
             case .lottie:
                 HStack(spacing: 10) {
-                    Button("▶️ Play") {
+                    Button("Play") {
                         swiftMessage = "play"
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.orange)
                     
-                    Button("⏸ Pause") {
+                    Button("Pause") {
                         swiftMessage = "pause"
                     }
                     .buttonStyle(.bordered)
                     
-                    Button("⏹ Stop") {
+                    Button("Stop") {
                         swiftMessage = "stop"
                     }
                     .buttonStyle(.bordered)
                     
-                    Button("⏪ Reverso") {
+                    Button("Reverso") {
                         swiftMessage = "reverse"
                     }
                     .buttonStyle(.bordered)
